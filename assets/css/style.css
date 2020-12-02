@@ -1,0 +1,447 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: white;
+    --secondary-color: rgb(25, 26, 29);
+    --tertiary-color: rgb(23, 148, 106);
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    background-color: var(--primary-color);
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    /* position: fixed;
+    top: 0; */
+    background-color: var(--primary-color);
+    width: 100vw;
+    height: 10vh;
+    z-index: 100;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header h1 {
+    padding: 0 0 0 100px;
+    margin: 15px 0px;
+    font-size: 36px;
+    font-weight: 400;
+}
+
+header h1 .prevent-link-styles {
+    border: none;
+    text-decoration: none;
+}
+
+header h1 a {
+    color: var(--secondary-color);
+}
+
+header h1 a:hover {
+    color: var(--tertiary-color);
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 0px 80px;
+}
+
+header nav .header-ul {
+    margin-bottom: 0;
+}
+
+header nav ul li {
+    padding: 5px 20px;
+    margin: 0px 5px;
+    font-size: 20px;
+    position: relative;
+}
+
+header nav ul li .prevent-link-styles {
+    border: none;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    color: var(--tertiary-color);
+}
+
+header nav ul li a::after {
+    border-top: 3px solid var(--tertiary-color);
+    content: "";
+    position: absolute;
+    right: 99%;
+    bottom: .04em;
+    left: 99%;
+    transition: .4s cubic-bezier(0, .5, 0, 1);
+}
+
+header nav ul li a:hover::after {
+    right: 0;
+    left: 0;
+}
+
+header nav ul li a {
+    color: var(--secondary-color);
+}
+
+.hero {
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem;
+    height: 90vh;
+}
+
+.hero img {
+    border: 5px solid rgb(52, 54, 59, .7);
+    border-radius: 50%;
+    margin-bottom: 1vw;
+    max-width: 300px;
+}
+
+#bio-wrapper {
+    color: var(--secondary-color);
+    text-align: center;
+    width: 50vw;
+}
+
+.section-heading {
+    font-weight: 400;
+    font-size: 4vw;
+    padding-bottom: 1vw;
+    margin: 0;
+    text-align: center;
+}
+
+.bio-body {
+    font-size: 1.7vw;
+    padding-bottom: .5vw;
+}
+
+.work {
+    display: flex;
+    padding: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20vw;
+    /* height: 100vh; */
+    border-bottom: 1px dashed var(--tertiary-color);
+    border-top: 1px dashed var(--tertiary-color);
+}
+
+.skills {
+    display: flex;
+    padding: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    margin: 0 2vw;
+    height: 100vh;
+    border-bottom: 1px dashed var(--tertiary-color);
+}
+
+#skills-container {
+    display: flex;
+    padding: 1.5rem;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin: 0 2vw;
+    color: var(--secondary-color);
+}
+
+.skills-column {
+    padding: 0 10vw;
+}
+
+.skills-heading {
+    font-size: 3vw;
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+.skills-ul {
+    font-size: 1.8vw;
+    list-style: none;
+}
+
+.skills-ul li {
+    padding: 10px 0;
+}
+
+.skills-ul li::before {
+    content: "✅";
+    display: inline-block;
+    margin-right: 0.2rem;
+}
+
+.customs-for-cards {
+    margin: 1vw;
+    text-align: center;
+    background-color: var(--primary-color);
+    border: solid 4px var(--tertiary-color);
+    background-position: center;
+    background-size: cover;
+}
+
+.card-text-wrapper {
+    text-align: left;
+    flex-wrap: wrap;
+}
+
+.card-body {
+    margin: 2vw;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: solid 2px var(--tertiary-color);
+    border-radius: 3px;
+    ;
+}
+
+.card-title {
+    color: var(--secondary-color);
+}
+
+#vroom {
+    background-image: url("../images/vroom.PNG");
+}
+
+#covid-data {
+    background-image: url("../images/covid-data.PNG");
+}
+
+#critter-tracker {
+    background-image: url("../images/critter-tracker.PNG");
+}
+
+#shop-shop {
+    background-image: url("../images/shop-shop.PNG");
+}
+
+#deep-thoughts {
+    background-image: url("../images/deep-thoughts.PNG");
+}
+
+#food-festival {
+    background-image: url("../images/food-festival.PNG");
+}
+
+.custom-button {
+    background-color: var(--tertiary-color);
+    border-color: var(--primary-color);
+    margin-top: 5px;
+}
+
+.custom-button:hover {
+    background-color: var(--tertiary-color);
+    border-color: var(--tertiary-color);
+}
+
+.contact-me {
+    display: flex;
+    background-color: var(--primary-color);
+    justify-content: center;
+}
+
+.contact-me ul {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 2vw;
+    margin-top: 16px;
+}
+
+.contact-me ul li {
+    padding: 5px;
+    margin: 20px 60px;
+    color: var(--secondary-color);
+    position: relative;
+}
+
+.contact-me ul li a:hover {
+    color: var(--tertiary-color);
+}
+
+.contact-me ul li a::after {
+    border-top: 3px solid var(--tertiary-color);
+    content: "";
+    position: absolute;
+    right: 99%;
+    bottom: .04em;
+    left: 99%;
+    transition: .4s cubic-bezier(0, .5, 0, 1);
+}
+
+.contact-me ul li a:hover::after {
+    right: 0;
+    left: 0;
+}
+
+.contact-me ul li a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+@media screen and (max-width: 1024px) {
+    header {
+        display: block;
+        text-align: center;
+    }
+    header h1 {
+        font-size: 22px;
+        padding: 10px;
+    }
+    header nav ul {
+        padding: 0px 20px;
+    }
+    .hero h2 {
+        font-size: 20px;
+        margin-right: 50px;
+    }
+    header {
+        display: block;
+        text-align: center;
+        position: relative;
+    }
+    header nav ul li {
+        font-size: 15px;
+        border-bottom: 1px solid var(--secondary-color);
+    }
+    header nav ul li:hover {
+        border-bottom: 1px solid var(--tertiary-color);
+    }
+    header nav ul li::after {
+        border: none;
+    }
+    .hero {
+        height: 85vh;
+    }
+    .hero img {
+        max-width: 100%;
+        margin: 0;
+        margin: 5vh 0;
+    }
+    .hero h2 {
+        font-size: 16px;
+        margin-right: 60px;
+    }
+    .bio-body {
+        font-size: 16px;
+    }
+    .skills {
+        height: auto;
+    }
+    .contact-me ul {
+        padding: 0;
+        font-size: 16px;
+    }
+    .contact-me ul li {
+        border-bottom: 1px solid var(--secondary-color);
+        margin: 20px 20px;
+    }
+    .contact-me ul li:hover {
+        border-bottom: 1px solid var(--tertiary-color);
+    }
+    .contact-me ul li::after {
+        border: none;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    body {
+        width: 100vw;
+    }
+    header nav ul li {
+        margin: 0;
+        padding: 5px;
+    }
+    .hero {
+        text-align: center;
+        padding-top: 25px;
+        width: 100vw;
+        text-align: center;
+    }
+    #bio-wrapper {
+        width: 85vw;
+    }
+    .bio-body {
+        width: 85vw;
+        align-self: center;
+        text-align: center;
+    }
+    #hello-tag {
+        margin-top: 10vh;
+    }
+    .hero img {
+        margin-top: 0 0 5vh 0;
+        max-width: 55vw;
+    }
+    .section-heading {
+        font-size: 24px;
+    }
+    #work {
+        width: 95vw;
+        margin: auto;
+    }
+    #skills {
+        width: 100vw;
+    }
+    #skills-container {
+        width: 100vw;
+    }
+    .skills-column {
+        width: 48vw;
+    }
+    .skills-heading {
+        font-size: 20px;
+    }
+    .skills-ul li {
+        font-size: 16px;
+    }
+    .contact-me ul li {
+        margin: 10px 20px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .skills-ul li::before {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #work {
+        width: 101vw;
+        padding: 0;
+    }
+    #projects-heading {
+        margin-top: 2.5vh;
+    }
+    .customs-for-cards {
+        width: 100vw;
+        border: none;
+        margin: 2.5vh 0;
+    }
+    .card-body {
+        width: 90vw;
+    }
+}

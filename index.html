@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vincent Caruso</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="icon" type="image/png" href="./assets/images/favicon.png">
+</head>
+
+<body>
+    <!--Header-->
+    <header>
+        <h1>
+            <a class="prevent-link-styles" href="./index.html">Vincent Caruso</a>
+        </h1>
+        <nav>
+            <!-- Unordered list element -->
+            <ul class="header-ul">
+                <li>
+                    <a class="prevent-link-styles" href="#work">Projects</a>
+                </li>
+                <li>
+                    <a class="prevent-link-styles" href="#skills">Skills</a>
+                </li>
+                <li>
+                    <a class="prevent-link-styles" href="#contact-me">Contact Me</a>
+                </li>
+
+                <li>
+                    <a class="prevent-link-styles" href="./assets/images/resume.pdf" target="_blank">Resume</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Hero-->
+    <section class="hero">
+        <div id="bio-wrapper">
+            <p id="hello-tag" class="section-heading">Hello, I'm Vincent!</p>
+            <img class="vince headshot" src="./assets/images/vince-headshot.jpg"
+                alt="Vincent Caruso on a Beach in California"></img>
+            <p class="bio-body">I'm a passionate web developer with expertise in both the front and back end.
+                Experienced problem-solver, collaborative team member, and effective communicator. Equipped with an
+                extensive technical skill set, but always willing and eager to learn more!</p>
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work" class="work row">
+        <p class="section-heading" id="projects-heading">Projects</p>
+        <div class="card col-12 customs-for-cards" id="vroom" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title"><u>Vroom</u></h5>
+                <div class="card-text-wrapper">
+                    <p class="card-text"><b>Purpose: </b>This app was created for people who want to connect over long distances. Add friends, create rooms, join rooms, and video chat with your friends and family.
+                    </p>
+                    <p class="card-text"><b>Technologies: </b>React.js, MongoDB, Mongoose, Express.js, Socket.io, GraphQL, Apollo.</p>
+                    <p class="card-text"><b>Role: </b>Group project. I handled project leadership, server configuration, database setup, CRUD API’s, socket.io implementation.</p>
+                </div>
+                <a href="https://pure-shelf-42623.herokuapp.com/" target="_blank" onclick="this.blur();"
+                    class="btn btn-primary custom-button">Site</a>
+                <a href="https://github.com/vcaruso0923/video-chatter" target="_blank" onclick="this.blur();"
+                    class="btn btn-primary custom-button">Code</a>
+            </div>
+        </div>
+
+        <div class="card col-12  customs-for-cards" id="covid-data" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title"><u>COVID-19 Data Hub</u></h5>
+                <div class="card-text-wrapper">
+                    <p class="card-text"><b>Purpose: </b>This app was created to provide up-to-date statistics about the COVID-19 pandemic as well as provide a place to search for testing centers in the U.S.</p>
+                    <p class="card-text"><b>Technologies: </b>Javascript, HTML, CSS, jQuery, Moment.js.</p>
+                    <p class="card-text"><b>Role: </b>Group project. I handled creating the map of testing centers in US, localStorage functionality, HTML/CSS, API calls.</p>
+                </div>
+                <a href="https://cvdatahub.com/" target="_blank" onclick="this.blur();"
+                    class="btn btn-primary custom-button">Site</a>
+                <a href="https://github.com/tedpedersen/group-project-uc-berkeley" target="_blank"
+                    onclick="this.blur();" class="btn btn-primary custom-button">Code</a>
+            </div>
+        </div>
+
+        <div class="card col-12  customs-for-cards" id="critter-tracker" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title"><u>CA Critter Tracker</u></h5>
+                <div class="card-text-wrapper">
+                    <p class="card-text"><b>Purpose: </b>This app was created to report animal sightings in California to assist in tracking wild animal migrations during an outbreak of wildfires.</p>
+                    <p class="card-text"><b>Technologies: </b>JavaScript, HTML, CSS, MySQL, Sequelize, Express.js, express-handlebars, express-session, bcrypt, dontenv</p>
+                    <p class="card-text"><b>Role: </b>Grouop project. I handled project leadership, Handlebars.js templates and routes, database models, server configuration, API routes.
+                    </p>
+                </div>
+                <a href="https://pure-scrubland-55089.herokuapp.com/" target="_blank" onclick="this.blur();"
+                    class="btn btn-primary custom-button">Site</a>
+                <a href="https://github.com/vcaruso0923/california-critter-tracker" target="_blank"
+                    onclick="this.blur();" class="btn btn-primary custom-button">Code</a>
+            </div>
+        </div>
+
+        <div class="card col-12  customs-for-cards" id="shop-shop" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title"><u>Shop-Shop</u></h5>
+                <div class="card-text-wrapper">
+                    <p class="card-text"><b>Purpose: </b>This app was created as a concept for an ecommerce site. It is not linked to any business, but is completely funtional.</p>
+                    <p class="card-text"><b>Technologies: </b>React.js, Redux, GraphQL, Express.js, Apollo, Stripe payment platform.</p>
+                    <p class="card-text"><b>Role: </b>This was an individual project. I handled implementing all functionality for this app, including state management with Reducx and creating components with React.js.</p>
+                </div>
+                <a href="https://radiant-journey-15834.herokuapp.com/" target="_blank" onclick="this.blur();"
+                    class="btn btn-primary custom-button">Site</a>
+                <a href="https://github.com/vcaruso0923/shop-shop" target="_blank" onclick="this.blur();"
+                    class="btn btn-primary custom-button">Code</a>
+            </div>
+        </div>
+
+        <div class="card col-12  customs-for-cards" id="deep-thoughts" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title"><u>Deep Thoughts</u></h5>
+                <div class="card-text-wrapper">
+                    <p class="card-text"><b>Purpose: </b>This app was created to serve as a social networking site where users can post their thoughts, react to others thoughts, and find and add friends.</p>
+                    <p class="card-text"><b>Technologies: </b>MongoDB, Express.js, React.js, Node.js, JWT, GraphQL, Apollo.</p>
+                    <p class="card-text"><b>Role: </b>This was an individual project. I handled implementing all functionality for this app, including building API endpoints and implementating JWT authentication.</p>
+                </div>
+                <a href="https://cryptic-wave-82874.herokuapp.com/" target="_blank" onclick="this.blur();"
+                    class="btn btn-primary custom-button">Site</a>
+                <a href="https://github.com/vcaruso0923/deep-thoughts" target="_blank" onclick="this.blur();"
+                    class="btn btn-primary custom-button">Code</a>
+            </div>
+        </div>
+
+        <div class="card col-12  customs-for-cards" id="food-festival" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title"><u>Food Festival</u></h5>
+                <div class="card-text-wrapper">
+                    <p class="card-text"><b>Purpose: </b>This app was created as a very lightweight app for attendees of a food festival. It is a PWA such that attendees could view the event schedule and other information without internet connection.</p>
+                    <p class="card-text"><b>Technologies (and tools): </b>JavaScript, HTML, CSS, ServiceWorker, Lighthouse, Webpack, Web Manifest.</p>
+                    <p class="card-text"><b>Role: </b>This was an individual project. I handled implementing all functionality for this app, including bundling resources and running lighthouse audits.</p>
+                </div>
+                <a href="https://vcaruso0923.github.io/food-festival/" target="_blank" onclick="this.blur();"
+                    class="btn btn-primary custom-button">Site</a>
+                <a href="https://github.com/vcaruso0923/food-festival" target="_blank" onclick="this.blur();"
+                    class="btn btn-primary custom-button">Code</a>
+            </div>
+        </div>
+    </section>
+
+    <!--Skils Section-->
+    <section id="skills" class="skills row">
+        <p class="section-heading col-12">Skills</p>
+        <div id="skills-container">
+            <div class="skills-column">
+                <h3 class="skills-heading">Front End:</h3>
+                <ul class="skills-ul">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>jQuery</li>
+                    <li>React</li>
+                    <li>Bootstrap</li>
+                    <li>Responsive Design</li>
+                </ul>
+            </div>
+            <div class="skills-column">
+                <h3 class="skills-heading">Back End:</h3>
+                <ul class="skills-ul">
+                    <li>APIs</li>
+                    <li>Node</li>
+                    <li>Express</li>
+                    <li>MongoDB</li>
+                    <li>REST</li>
+                    <li>GraphQL</li>
+                    <li>MySQL (Sequelize)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!--Contact Me Section-->
+    <footer id="contact-me" class="contact-me">
+        <h2 class="left-side-h2"></h2>
+        <div>
+            <ul>
+
+                <li>
+                    <a href="https://github.com/vcaruso0923" target="blank">GitHub</a>
+                </li>
+
+                <li>
+                    <a href="https://www.linkedin.com/in/vincent-caruso-978902121/" target="blank">LinkedIn</a>
+                </li>
+                <li>
+                    <a href="mailto:vinnycar0923@gmail.com">vinnycar0923@gmail.com</a>
+                </li>
+                <li>
+                    <a href="skype:+7817526338?call">781-752-6888</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>
